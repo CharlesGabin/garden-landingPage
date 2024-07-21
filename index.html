@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping. "
+    />
+    <meta name="author" content="Jason and Maria" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Lucky Shrub" />
+    <meta
+      property="og:description"
+      content="Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping. "
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://example.com/page" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href=" images/Asset @3x.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Lucky Shrub</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/Asset 2@3x.png" alt="Logo of Lucky Shrub" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about" onclick="showDiv()">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="first-section">
+        <article class="first">
+          <div class="banner">
+            <div class="banner-overlay">
+                <div class="fadein">
+                  <h1 class="head title1">
+                    Welcome to <span class="title">Lucky Shrub</span
+                    ><span class="dot">.</span>
+                  </h1>
+                  <h1 class="head title2">
+                    Transform Your Space into a Lush Oasis
+                  </h1>
+                </div>
+                <button id="showDiv" onclick="showDiv()">Explore now</button>
+              <script>
+                function showDiv() {
+                  var div = document.getElementById("about");
+                  var button = document.getElementById("showDiv");
+                  if (
+                    div.style.display === "none" ||
+                    div.style.display === ""
+                  ) {
+                    div.style.display = "block";
+                    button.innerHTML = "Hide now";
+                  } else {
+                    div.style.display = "none";
+                    button.textContent = "Explore now";
+                  }
+                }
+              </script>
+            </div>
+          </div>
+        </article>
+        <article id="about">
+          <div class="hidden-article">
+            <div class="hidden-text">
+              <h1>
+                Welcome to <span class="title-hidden">Lucky Shrub</span
+                ><span class="dot">.</span>
+              </h1>
+              <p>
+                Discover the beauty of nature with Lucky Shrub, your premier
+                destination for garden design, landscaping, and a diverse
+                selection of indoor and outdoor plants in Tucson, Arizona.
+                Founded by Jason and Maria, our passion for plants and
+                commitment to quality craftsmanship drive everything we do.
+              </p>
+              <p>
+                At Lucky Shrub, we specialize in transforming ordinary spaces
+                into extraordinary gardens. Whether you're dreaming of a serene
+                backyard retreat or a vibrant urban oasis, our team is here to
+                bring your vision to life. From initial concept to meticulous
+                installation and ongoing maintenance, we provide comprehensive
+                services tailored to meet your unique needs.
+              </p>
+              <p>
+                Explore our plant nursery, where you'll find a curated
+                collection of plants suited for every environment and aesthetic.
+                Whether you're a seasoned gardener or just starting out, our
+                experts are here to assist you in selecting the perfect plants
+                for your home or business.
+              </p>
+              <p>
+                Contact us at Lucky Shrub, we are always delighted to hear from
+                you and answer any questions you may have. Whether you need
+                advice on garden design, assistance with maintenance and
+                landscaping, or want to learn more about our plants and nursery,
+                our team is here to help.
+              </p>
+            </div>
+            <div class="hidden-image">
+              <img src="images/about_us_image.png" alt="Image of plants" />
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="services">
+        <article class="container">
+          <h2>Garden Design - Creation </h2>
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1527863280617-15596f92e5c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fEdhcmRlbiUyMGRlc2lnbiUyMGFuZCUyMGNyZWF0aW9ufGVufDB8fDB8fHww"
+              alt="Image of plants"
+              class="centered image"
+            />
+          </div>
+          <div class="box">
+            <p>
+              At Lucky Shrub, we believe that every space has the potential to
+              become a beautiful garden oasis. Our expert garden design and
+              creation services are tailored to bring your vision to life,
+              enhancing the natural beauty of your surroundings.
+            </p>
+          </div>
+        </article>
+        <article class="container">
+          <h2>Plant nursery</h2>
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1558579908-9adaa7b1333d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYW50JTIwbnVyc2VyeXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Image of plants"
+              class="centered image"
+            />
+          </div>
+          <div class="box">
+            <p>
+              Explore Lucky Shrub's plant nursery, where you'll find a diverse
+              selection of high-quality indoor and outdoor plants. Whether
+              you're looking to add a splash of greenery to your home or create
+              a vibrant garden, we have the perfect plants to suit your needs.
+            </p>
+          </div>
+        </article>
+        <article id="contact" class="container">
+          <h2>How to Reach Us</h2>
+          <div class="excludeBox">
+            <p>
+              Address: 123 Garden Avenue, Tucson, Arizona, 85701 
+            </p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@luckyshrub.com</p>
+            <p>
+              Opening Hours:
+              <ul>
+                <li>
+                  Monday - Friday: 9:00 AM - 6:00 PM
+                </li>
+                <li>
+                  Saturday: 10:00 AM - 5:00 PM
+                </li>
+                <li>
+                  Sunday: Closed
+                </li>
+              </ul>
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <img src="images/Asset 1@3x.png" alt="Logo of Lucky Shrub" />
+      </div>
+      <div>
+        <p>© 2024 Lucky Shrub</p>
+      </div>
+    </footer>
+  </body>
+</html>
